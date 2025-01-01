@@ -15,13 +15,18 @@ public class LoginService {
 
     public String welcomePage(ModelMap modelMap, String username, String password){
         Map<String, String> users = UserRepository.getUserRepository();
+        if(!users.containsKey(username)){
+            modelMap.put("errorMsg", "Invalid Username.");
+            return "login";
+        }
+
         if(users.containsKey(username) && users.get(username).equals(password)){
             modelMap.put("username", username);
 
             return "welcome";
         }
 
-        modelMap.put("errorMsg", "Please provide correct credentials.");
+        modelMap.put("errorMsg", "Password is wrong. Please enter the correct password.");
         return "login";
     }
 }

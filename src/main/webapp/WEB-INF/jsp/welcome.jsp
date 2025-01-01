@@ -1,10 +1,11 @@
 <html>
 <head>
+<link rel="stylesheet" href="/css/style.css">
 <title>Welcome Page</title>
 </head>
 
 <body>
-    <h2>Welcome ${username} to the site.</h2>
+    <h2>Welcome to Wissen Technology! ${username}.</h2>
 </body>
 
 </html>
