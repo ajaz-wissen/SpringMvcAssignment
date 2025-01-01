@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <h2>Welcome to Wissen Technology! ${username}.</h2>
+    <h2 class="h2-success">Welcome to Wissen Technology! ${username}.</h2>
 </body>
 
 </html>
